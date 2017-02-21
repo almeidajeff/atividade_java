@@ -124,6 +124,32 @@ public class ExercicioUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    public class CheckEquilatero{
+        public boolean equilatero(int lado1, int lado2, int lado3){
+            if (lado1 == lado2 && lado1 == lado3)
+                return true;
+            return false;
+        }
+    }
+    
+    public class CheckIsosceles{
+        public boolean isosceles(int lado1, int lado2, int lado3){
+            if (lado1 == lado2 && lado1 != lado3 ||
+                lado1 != lado2 && lado1 == lado3 ||
+                lado2 == lado3 && lado2 != lado3)
+                return true;
+            return false;
+        }
+    
+        public class CheckEscaleno{
+            public boolean escaleno(int lado1, int lado2, int lado3){
+            if (lado1 != lado2 && lado2 != lado3)
+                return true;
+            return false;
+        }
+    }
+    }
+    
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
