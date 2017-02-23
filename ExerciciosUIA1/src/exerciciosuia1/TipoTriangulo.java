@@ -104,7 +104,11 @@ public class TipoTriangulo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void verificar_tipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificar_tipoActionPerformed
-        check_tipo_triangulo(this.lado1, this.lado2, this.lado3);
+
+        int l1 = Integer.parseInt(lado1.getText());
+        int l2 = Integer.parseInt(lado2.getText());
+        int l3 = Integer.parseInt(lado3.getText());
+        check_tipo_triangulo(l1, l2, l3);
     }//GEN-LAST:event_verificar_tipoActionPerformed
 
     /**
