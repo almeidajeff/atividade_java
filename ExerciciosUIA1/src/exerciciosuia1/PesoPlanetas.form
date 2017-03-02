@@ -128,7 +128,13 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="mercurio">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Merc&#xfa;rio"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="actionCommand" type="java.lang.String" value="mercurio"/>
+        <Property name="name" type="java.lang.String" value="mercurio" noResource="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mercurioActionPerformed"/>
@@ -136,12 +142,20 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="venus">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="V&#xea;nus"/>
+        <Property name="actionCommand" type="java.lang.String" value="venus"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="marte">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Marte"/>
+        <Property name="actionCommand" type="java.lang.String" value="marte"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="marteActionPerformed"/>
@@ -149,12 +163,20 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="jupiter">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="J&#xfa;piter"/>
+        <Property name="actionCommand" type="java.lang.String" value="jupiter"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="saturno">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Saturno"/>
+        <Property name="actionCommand" type="java.lang.String" value="saturno"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saturnoActionPerformed"/>
@@ -162,7 +184,11 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="urano">
       <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Urano"/>
+        <Property name="actionCommand" type="java.lang.String" value="urano"/>
       </Properties>
     </Component>
   </SubComponents>

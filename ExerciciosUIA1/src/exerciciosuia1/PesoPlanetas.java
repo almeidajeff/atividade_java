@@ -5,6 +5,8 @@
  */
 package exerciciosuia1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jeff
@@ -61,32 +63,46 @@ public class PesoPlanetas extends javax.swing.JFrame {
 
         jLabel2.setText("Selecione o Planeta");
 
+        buttonGroup1.add(mercurio);
         mercurio.setText("Mercúrio");
+        mercurio.setToolTipText("");
+        mercurio.setActionCommand("mercurio");
+        mercurio.setName("mercurio"); // NOI18N
         mercurio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mercurioActionPerformed(evt);
             }
         });
 
+        buttonGroup1.add(venus);
         venus.setText("Vênus");
+        venus.setActionCommand("venus");
 
+        buttonGroup1.add(marte);
         marte.setText("Marte");
+        marte.setActionCommand("marte");
         marte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 marteActionPerformed(evt);
             }
         });
 
+        buttonGroup1.add(jupiter);
         jupiter.setText("Júpiter");
+        jupiter.setActionCommand("jupiter");
 
+        buttonGroup1.add(saturno);
         saturno.setText("Saturno");
+        saturno.setActionCommand("saturno");
         saturno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saturnoActionPerformed(evt);
             }
         });
 
+        buttonGroup1.add(urano);
         urano.setText("Urano");
+        urano.setActionCommand("urano");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -152,7 +168,9 @@ public class PesoPlanetas extends javax.swing.JFrame {
     }//GEN-LAST:event_pesoActionPerformed
 
     private void calcular_pesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcular_pesoActionPerformed
-        // TODO add your handling code here:
+        double peso_double = Double.parseDouble(this.peso.getText());
+        String planeta = buttonGroup1.getSelection().getActionCommand();
+        CalculaPeso(planeta, peso_double);
     }//GEN-LAST:event_calcular_pesoActionPerformed
 
     private void mercurioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mercurioActionPerformed
@@ -201,7 +219,38 @@ public class PesoPlanetas extends javax.swing.JFrame {
             }
         });
     }
-
+    // Funções extras
+    public static void CalculaPeso(String planeta, double peso){
+        if (planeta == "mercurio"){
+            double peso_planeta = (peso/10)* 0.37;
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+        }
+        
+        else if (planeta == "venus"){
+            double peso_planeta = (peso/10)* 0.88;
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+        }
+        else if (planeta == "marte") {
+            double peso_planeta = (peso/10)* 0.38;
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+        }
+        
+        else if (planeta == "jupiter") {
+            double peso_planeta = (peso/10)* 2.04;
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+        }
+        
+        else if (planeta == "saturno") {
+            double peso_planeta = (peso/10)* 1.15;
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+        }
+        else if (planeta == "urano") {
+            double peso_planeta = (peso/10)* 1.17;
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+        }
+    }
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
