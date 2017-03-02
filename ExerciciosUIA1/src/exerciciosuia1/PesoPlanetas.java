@@ -223,30 +223,30 @@ public class PesoPlanetas extends javax.swing.JFrame {
     public static void CalculaPeso(String planeta, double peso){
         if (planeta == "mercurio"){
             double peso_planeta = (peso/10)* 0.37;
-            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta + " kg");
         }
         
         else if (planeta == "venus"){
             double peso_planeta = (peso/10)* 0.88;
-            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta + " kg");
         }
         else if (planeta == "marte") {
             double peso_planeta = (peso/10)* 0.38;
-            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta + " kg");
         }
         
         else if (planeta == "jupiter") {
             double peso_planeta = (peso/10)* 2.04;
-            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta + " kg");
         }
         
         else if (planeta == "saturno") {
             double peso_planeta = (peso/10)* 1.15;
-            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta + " kg");
         }
         else if (planeta == "urano") {
             double peso_planeta = (peso/10)* 1.17;
-            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta);
+            JOptionPane.showMessageDialog(null, "Seu peso em " + planeta + " será de: " + peso_planeta + " kg");
         }
     }
     
